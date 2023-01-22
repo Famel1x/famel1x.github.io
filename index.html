@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sites</title>
+    <link rel = "stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="Logo">Logo</a>
+        <ul>
+            <li><a href="#" class="acticve">Home</a></li>
+            <li><a href="#" >About</a></li>
+            <li><a href="#" >Download</a></li>
+            <li><a href="#" >Log in/Sing in</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="presets/stars.png" id="stars">
+        <img src="presets/moon.png" id="moon">
+        <h2 id = "text">Assistient</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="presets/1.png" id="front_image">
+    </section>
+    <div class="sec"  id="sec">
+        <h2>Best your Assistient</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos quas qui vitae ducimus odit mollitia facere voluptas tenetur dolor praesentium deleniti perferendis eveniet, veritatis quia, culpa voluptates nostrum neque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore obcaecati aliquid incidunt tenetur cumque iusto non distinctio neque reiciendis suscipit. Maxime architecto eveniet perspiciatis unde saepe blanditiis, repudiandae consectetur nobis?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, at aliquam nobis quas, nihil autem vel, dolorum molestiae provident reiciendis aperiam molestias voluptas porro nam exercitationem quisquam ipsa voluptatum. Repudiandae?
+             <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos quas qui vitae ducimus odit mollitia facere voluptas tenetur dolor praesentium deleniti perferendis eveniet, veritatis quia, culpa voluptates nostrum neque.
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore obcaecati aliquid incidunt tenetur cumque iusto non distinctio neque reiciendis suscipit. Maxime architecto eveniet perspiciatis unde saepe blanditiis, repudiandae consectetur nobis?
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, at aliquam nobis quas, nihil autem vel, dolorum molestiae provident reiciendis aperiam molestias voluptas porro nam exercitationem quisquam ipsa voluptatum. Repudiandae?
+            </p>
+    </div>
+    <script>
+        let stars  = document.getElementById('stars')
+        let moon = document.getElementById('moon')
+        let front = document.getElementById('front')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left =  value * 0.5 + 'px';
+            moon.style.top = value * 0.6 + 'px';
+        })</script>
+</body>
+</html>
