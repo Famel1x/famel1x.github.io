@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sites</title>
     <link rel = "stylesheet" type="text/css" href="css/style.css">
-</head>
+    <script src="https://kit.fontawesome.com/8abed6b128.js" crossorigin="anonymous"></script>
+    </head>
 <body>
     <header>
-        <a href="#" class="Logo">Logo</a>
+        <a href="#" class="Logo">Wise Gate</a>
         <ul>
             <li><a href="#" class="acticve">Home</a></li>
-            <li><a href="#" >About</a></li>
+            <li><a href="#" >Plugins</a></li>
             <li><a href="#" >Download</a></li>
             <li><a href="#" >Log in/Sing in</a></li>
         </ul>
@@ -20,20 +21,98 @@
     <section>
         <img src="presets/stars.png" id="stars">
         <img src="presets/moon.png" id="moon">
-        <h2 id = "text">Assistient</h2>
+        <h2 id = "text">Wise Gate</h2>
         <a href="#sec" id="btn">Explore</a>
         <img src="presets/1.png" id="front_image">
     </section>
     <div class="sec"  id="sec">
-        <h2>Best your Assistient</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos quas qui vitae ducimus odit mollitia facere voluptas tenetur dolor praesentium deleniti perferendis eveniet, veritatis quia, culpa voluptates nostrum neque.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore obcaecati aliquid incidunt tenetur cumque iusto non distinctio neque reiciendis suscipit. Maxime architecto eveniet perspiciatis unde saepe blanditiis, repudiandae consectetur nobis?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, at aliquam nobis quas, nihil autem vel, dolorum molestiae provident reiciendis aperiam molestias voluptas porro nam exercitationem quisquam ipsa voluptatum. Repudiandae?
-             <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eos quas qui vitae ducimus odit mollitia facere voluptas tenetur dolor praesentium deleniti perferendis eveniet, veritatis quia, culpa voluptates nostrum neque.
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore obcaecati aliquid incidunt tenetur cumque iusto non distinctio neque reiciendis suscipit. Maxime architecto eveniet perspiciatis unde saepe blanditiis, repudiandae consectetur nobis?
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, at aliquam nobis quas, nihil autem vel, dolorum molestiae provident reiciendis aperiam molestias voluptas porro nam exercitationem quisquam ipsa voluptatum. Repudiandae?
-            </p>
+        <h2>Best your assistant</h2>
+        <p>A new large-scale project. A voice assistant
+            that can do more!</p>
+
+
+            <!-- Блок с +/- -->
+    
+    
+        </div>
+
+
+
+    <div class="thre">
+        <h2>Fully customizable interface, plugins, modes.</h2>
+        <p>Try it yourself :0</p>
+
+
+        <div class="theme-picker-section">
+            <input type="radio" name = "theme" value="white">
+            <input type="radio" name = "theme" value="red">
+            <input type="radio" name = "theme" value="orange">
+            <input type="radio" name = "theme" value="yellow">
+            <input type="radio" name = "theme" value="green">
+            <input type="radio" name = "theme" value="blue">
+            <input type="radio" name = "theme" value="indigo">
+            <input type="radio" name = "theme" value="violet">
+        </div>
+        <div class="changettext">
+            Hello World
+        </div>
+
     </div>
+
+    <div class="frea">
+        <h2></h2>
+        <p></p>
+
+
+        <!-- Блок с  -->
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- vk telegramm dzen ok  -->
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-vk"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Plugins</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p>
+            Wise Gate @ 2023    
+        </p>
+    </footer>
+
+
+    
     <script>
         let stars  = document.getElementById('stars')
         let moon = document.getElementById('moon')
@@ -46,5 +125,19 @@
             stars.style.left =  value * 0.5 + 'px';
             moon.style.top = value * 0.6 + 'px';
         })</script>
+
+    <script>
+        const root = document.querySelector("root"),
+            inputs = document.querySelectorAll("input[name='theme']");
+
+        for(const input of inputs){
+            input.onchange = e =>{
+                root.style.setProperty("--theme-color", 'var(--${value})');
+            }
+        }
+    </script>
 </body>
 </html>
+
+
+
