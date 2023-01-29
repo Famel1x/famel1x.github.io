@@ -28,14 +28,6 @@
         <a href="#sec" id="btn">Explore</a>
         <img src="presets/1.png" id="front_image">
     </section>
-        <script>
-           const windowInnerWidth = window.innerWidth
-           var image = document.getElementById('front_image');
-           var image2 = document.getElementById('stars');
-           image.style.width = windowInnerWidth;
-           image2.style.width = windowInnerWidth;
-        })
-    </script>
     <div class="sec"  id="sec">
         <h2>Best your assistant</h2>
         <p style="height: 100px;">A new large-scale project. A voice assistant
@@ -214,17 +206,26 @@
         let text = document.getElementById('text')
         let btn = document.getElementById('btn')
         
-        var x = document.documentElement.clientWidth;
-        if (x >= 1850) {
+        const screenWidth = window.screen.width
+        const screenHeight = window.screen.height
+        if (screenWidth >= 1850) {
           window.addEventListener('scroll', function(){
             let value = window.scrollY;
             stars.style.left =  value * 0.5 + 'px';
             moon.style.top = value * 0.6 + 'px';
         }); 
         }
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          window.location.href = 'famel1x.github.io/moobile.html';
+        } else {
+            // код для обычных устройств
+        }
 
 
        </script>
+
+    <script>
+    </script>
 
 </body>
 </html>
