@@ -384,7 +384,7 @@ section image#front_image{
 
 .wrap1{
     left: 100px;
-    flex: 2;
+    flex: 0.5;
 }
 .wrap2{
     left: -100px;
