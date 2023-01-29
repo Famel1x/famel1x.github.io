@@ -216,16 +216,12 @@
         }); 
         }
 
-        var mobile1 = true;
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-          if(mobile1 == true){
-            window.location.href = 'famel1x.github.io/moobile.html';
-            mobile1 = false;
-          }
           
-        } else {
-            // код для обычных устройств
-        }
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+
+                alert("Вы используете мобильное устройство (телефон или планшет).")
+
+            } else alert("Вы используете ПК.")
 
 
        </script>
