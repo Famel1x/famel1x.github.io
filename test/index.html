@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="themes">
+        <label><input type="radio" name = "theme" value = "light"checked></label>
+        <label><input type="radio" name = "theme" value = "dark" ></label>
+    </div>
+
+    <h2>Hello world</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, provident aut. Non veniam eligendi ipsa perferendis sit ex atque temporibus ipsum vitae, ut, facilis, quisquam a alias? Error, asperiores nihil.</p>
+
+    <script>
+
+
+        document.querySelector('div.themes').addEventListener('change', function(){
+           var name_theme =  document.querySelector("input[type='radio'][name=theme]:checked").value;
+            console.log(name_theme)
+            document.documentElement.classList.remove('dark', 'light');
+            document.documentElement.classList.add(name_theme);
+        })
+    </script>
+</body>
+</html>

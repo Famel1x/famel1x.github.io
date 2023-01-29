@@ -1,0 +1,13 @@
+html.light{
+    --bg:#fff;
+    --color:#000;
+}
+html.dark{
+    --bg:#000;
+    --color:#fff;
+}
+
+body{
+    background: var(--bg);
+    color: var(--color);
+}

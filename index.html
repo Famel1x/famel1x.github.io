@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="Mint">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sites</title>
     <link rel = "stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/8abed6b128.js" crossorigin="anonymous"></script>
+    <script src="js/testing.js"></script>
     </head>
 <body>
     <header>
@@ -27,8 +30,12 @@
     </section>
     <div class="sec"  id="sec">
         <h2>Best your assistant</h2>
-        <p>A new large-scale project. A voice assistant
+        <p style="height: 100px;">A new large-scale project. A voice assistant
             that can do more!</p>
+
+          <h3 style="width: 500px; margin-right: auto; height: 200px; color: #fff;">This voice assistant is as versatile as possible and is suitable for most tasks. From searching for information on the Internet to spot-tuning your hardware and arduino. He will help you in games and not only ;)</h3>
+            <h1 style="text-align:center;font-family:Georgia;font-variant:small-caps;color:#3E6FE7;height: 100px;">It is not yet possible to download, because the release is scheduled for early March. Follow the news or write to us. -_-</h1>
+
 
 
             <!-- Блок с +/- -->
@@ -40,31 +47,97 @@
 
     <div class="thre">
         <h2>Fully customizable interface, plugins, modes.</h2>
-        <p>Try it yourself :0</p>
-
-
-        <div class="theme-picker-section">
-            <input type="radio" name = "theme" value="white">
-            <input type="radio" name = "theme" value="red">
-            <input type="radio" name = "theme" value="orange">
-            <input type="radio" name = "theme" value="yellow">
-            <input type="radio" name = "theme" value="green">
-            <input type="radio" name = "theme" value="blue">
-            <input type="radio" name = "theme" value="indigo">
-            <input type="radio" name = "theme" value="violet">
-        </div>
-        <div class="changettext">
-            Hello World
-        </div>
+        <p>Try it yourself :0 </p>
 
     </div>
+    <div class="testing">
+        <div class="v11_3">
+            <div class="v11_49">
+              <div class="v11_4"></div>
+              <div class="v11_5"></div><span class="v11_10">Wise Gate</span>
+              <div class="v11_15">
+                <div class="v11_9"></div><span class="v11_14">Account</span></div>
+              <div class="v11_16">
+                <div class="v11_6"></div><span class="v11_11">Main</span></div>
+              <div class="v11_17">
+                <div class="v11_7"></div><span class="v11_12">Settings</span></div>
+              <div class="v11_18">
+                <div class="v11_8"></div><span class="v11_13">Information</span></div>
+              <div class="v11_33">
+                <div class="v11_21"></div><span class="v11_28">Assistant says in this block</span></div>
+              <div class="v11_32">
+                <div class="v11_19"></div><span class="v11_29">17°C / 13°C Windy</span></div>
+              <div class="v11_31">
+                <div class="v11_20"></div><span class="v11_30">17:00</span></div>
+              <div class="v11_48">
+                <div class="v11_23"></div><span class="v11_35">GPU: 13% </span><span class="v11_36">CPU: 16% </span><span class="v11_37">RAM: 6% </span><span class="v11_34">You’r PC</span></div>
+              <div class="v11_47">
+                <div class="v11_26"></div>
+                <div class="v11_39"></div>
+                <div class="v11_40"></div>
+                <div class="v11_41"></div><span class="v11_42">CS:GO helper</span><span class="v11_43">DOTA helper</span><span class="v11_44">Voice notepad</span><span class="v11_38">Plugin is active</span></div>
+              <div class="v11_46">
+                <div class="v11_27"></div><span class="v11_45">You can customize by yourself</span></div>
+            </div>
+          </div>
+          <div class="theme-picker-section">
+                <div class="themes">
+                <label class="rad-label">
+                  <input type="radio" class="rad-input" name="theme" checked value="Mint">
+                  <div class="rad-design"></div>
+                  <div class="rad-text">Mint</div>
+                </label>
+              
+                <label class="rad-label">
+                  <input type="radio" class="rad-input" name="theme" value="Yellow">
+                  <div class="rad-design"></div>
+                  <div class="rad-text">Yellow</div>
+                </label>
+              
+                <label class="rad-label">
+                  <input type="radio" class="rad-input" name="theme" value="Indigo">
+                  <div class="rad-design"></div>
+                  <div class="rad-text">Indigo</div>
+                </label>
+              
+                <label class="rad-label">
+                  <input type="radio" class="rad-input" name="theme" value="Red">
+                  <div class="rad-design"></div>
+                  <div class="rad-text">Red</div>
+                </label>
+              </div>
+        </div>
+    </div>
+    
+    <script>
+      document.querySelector('div.themes').addEventListener('change', function(){
+           var name_theme =  document.querySelector("input[type='radio'][name=theme]:checked").value;
+            console.log(name_theme)
+            document.documentElement.classList.remove('Mint', 'Yellow', 'Indigo','Red');
+            document.documentElement.classList.add(name_theme);
+        })
+    </script>
 
     <div class="frea">
-        <h2></h2>
-        <p></p>
+        <h2>Our team is small but productive!</h2>
+        <p>Write to us and we will consider your candidacy :)</p>
 
-
-        <!-- Блок с  -->
+        <div class="commanda">
+        <div class="wrap1">
+          <div class="card">
+            <div class="front"><span>Frontend, Backen, Designer and Mysql developer</span></div>
+            <div class="back"><a href="https://vk.com/go_away_from_my_swam" target="_blank"><img src="https://sun9-49.userapi.com/impg/ze2FCQ_pF9kl1XPsWPDZJT-BvnNlgiyKerxSKg/tYijT8kvPVg.jpg?size=640x480&quality=95&sign=d2463049f3ca8ee20506c7555a798b6d&type=album" alt="ichise"></a></div>
+          </div>
+        </div>
+        <div class="wrap2">
+          <div class="card">
+            <div class="front"><span>Frontend, Backend and Python developer</span></div>
+            <div class="back"><a href="https://vk.com/hirikayato" target="_blank"><img src="https://sun9-13.userapi.com/impg/O1LORPf_mTxyHa5dI1fnniz4l4deJx4uDyf4sg/0GKfOz4nwFI.jpg?size=564x564&quality=95&sign=83fa61dc99e501efd6eb4536970969ba&type=album" alt="hirikayato"></a></div>
+          </div>
+        </div>
+        
+        </div>
+        <!-- Блок с командой -->
 
 
     </div>
@@ -78,7 +151,8 @@
 
 
     <!-- vk telegramm dzen ok  -->
-
+    <div id="bubble-wrapper">
+      </div>
     <footer class="footer">
         <div class="social">
             <a href="#"><i class="fa-brands fa-discord"></i></a>
@@ -88,7 +162,6 @@
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-vk"></i></a>
         </div>
-
         <ul class="list">
             <li>
                 <a href="#">Home</a>
@@ -111,8 +184,21 @@
         </p>
     </footer>
 
+    <script>
+    const wrapper = document.getElementById("bubble-wrapper");
 
-    
+      const animateBubble = x => {  
+        const bubble = document.createElement("div");
+        
+        bubble.className = "bubble";
+        bubble.style.left = `${x}px`;
+        
+        wrapper.appendChild(bubble);
+        
+        setTimeout(() => wrapper.removeChild(bubble), 2000);
+      }
+      
+      window.onmousemove = e => animateBubble(e.clientX);</script>
     <script>
         let stars  = document.getElementById('stars')
         let moon = document.getElementById('moon')
@@ -127,15 +213,27 @@
         })</script>
 
     <script>
-        const root = document.querySelector("root"),
-            inputs = document.querySelectorAll("input[name='theme']");
-
-        for(const input of inputs){
-            input.onchange = e =>{
-                root.style.setProperty("--theme-color", 'var(--${value})');
-            }
-        }
     </script>
+    <script>
+      //Code from ElementHow posts Full code
+
+(function(debug){
+ var w = debug.documentElement.offsetWidth,
+     t = debug.createTreeWalker (debug.body, NodeFilter.SHOW_ELEMENT),
+     b;
+
+while (t.nextNode()) {
+b = t.currentNode.getBoundingClientRect();
+if (b.right > w || b.left < 0){
+  t.currentNode.style.setProperty('outline', '1px solid red', 'important');
+console.log (t.currentNode);
+
+}
+
+};
+
+} (document));
+      </script>
 </body>
 </html>
 

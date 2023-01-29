@@ -6,12 +6,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    
 }
 
 body{
     min-height: 100vh;
     background: linear-gradient(#040e17, #2a6bbf);
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 header{
@@ -126,6 +128,7 @@ section image#front_image{
     font-size: 3.5em;
     margin-bottom: 10px;
     color: #fff;
+    height: 100px;
 }
 
 .sec p{
@@ -157,6 +160,8 @@ section image#front_image{
     padding: 40px 0;
     background-color: #020609;
     color: #fff;
+    z-index: 1;
+    
 }
 
 .footer .social{
@@ -168,7 +173,7 @@ section image#front_image{
 .footer .social a{
     font-size: 24px;
     color: inherit;
-    border: 1px solid #ccc;
+    border: 1px solid #205291;
     width: 40px;
     height: 40px;
     line-height: 38px;
@@ -191,6 +196,7 @@ section image#front_image{
     line-height: 1.6;
     margin: 0 auto;
     text-align: center;
+    z-index: 2;
 }
 
 .footer ul a{
@@ -233,4 +239,206 @@ section image#front_image{
 
 .changettext{
     color: rgba(var(--theme-color), 0.1);
+}
+
+.testing{
+    position: relative;
+    padding: 100px;
+    background: #020609;
+    text-align: center;
+}
+
+.rad-label {
+    display: inline-block;
+    align-items: center;
+  
+    border-radius: 100px;
+    padding: 14px 16px;
+    margin: 10px 0;
+  
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  .rad-label:hover,
+  .rad-label:focus-within {
+    background: hsla(0, 0%, 80%, .14);
+  }
+  
+  .rad-input {
+    position: absolute; 
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    z-index: 3;
+  }
+  
+  .rad-design {
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+  
+    background: linear-gradient(to right bottom, hsl(154, 97%, 62%), hsl(225, 97%, 62%));
+    position: relative;
+  }
+  
+  .rad-design::before {
+    content: '';
+  
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+  
+    background: hsl(0, 0%, 90%);
+    transform: scale(1.1);
+    transition: .3s;
+  }
+  
+  .rad-input:checked+.rad-design::before {
+    transform: scale(0);
+  }
+  
+  .rad-text {
+    color: hsl(0, 0%, 60%);
+    margin-left: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+  
+    transition: .3s;
+  }
+  
+  .rad-input:checked~.rad-text {
+    color: hsl(0, 0%, 40%);
+  }
+
+.theme-picker-section {
+    margin: 0 auto;
+    top: 150px;
+}
+  .card {
+    width: 300px;
+    height:300px;
+    position: relative;
+    perspective: 1000px;
+  }
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  .front {
+    background-color: #205291;
+  }
+  .back {
+    background-color: #BDBDBD;
+    transform: rotateY(180deg);
+  }
+  .card:hover .front {transform: rotateY(180deg);}
+  .card:hover .back {transform: rotateY(360deg);}
+
+.commanda{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #020609;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frea{
+    position: relative;
+    padding: 200px;
+    background: #020609;
+    text-align: right;
+    text-align: center;
+    color: #fff;
+}
+
+.frea h2{
+    font-size: 3.5em;
+    color: #fff;
+    bottom: 100px;
+    height: 200px;
+}
+
+.frea p{
+    color: #fff;
+    bottom: 100px;
+    height: 100px;
+}
+
+.wrap1{
+    left: 100px;
+    flex: 2;
+}
+.wrap2{
+    left: -100px;
+}
+
+.frea img{
+    width: 300px;
+    height: 300px;
+}
+
+
+
+@keyframes wave {
+    from, to {
+      transform: translate(-50%, 0%);
+    }
+    
+    50% {
+      transform: translate(-50%, -20%);
+    }
+  }
+
+  #bubble-wrapper {
+    height: 100%;
+    width: 100%;
+    
+    position: fixed;
+    bottom: 0px;
+    
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 4;
+  }
+  
+  .bubble {
+    height: max(300px, 30vw);
+    width: max(300px, 30vw);
+    
+    background-color: rgb(33, 150, 243);  
+    border-radius: 100%;
+    
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    
+    animation: wave 2s ease-in-out infinite;
+  }
+  
+  @media(prefers-reduced-motion) {
+    .bubble {
+      animation: none;
+      display: none;
+    }
+  }
+.sec h1{
+    height: 100px;
 }
