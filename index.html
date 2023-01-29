@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/8abed6b128.js" crossorigin="anonymous"></script>
-    <script src="js/testing.js"></script>
     </head>
 <body>
     <header>
@@ -206,11 +205,17 @@
         let text = document.getElementById('text')
         let btn = document.getElementById('btn')
         
-        window.addEventListener('scroll', function(){
+        var x = document.documentElement.clientWidth;
+        if (x >= 950) {
+          window.addEventListener('scroll', function(){
             let value = window.scrollY;
             stars.style.left =  value * 0.5 + 'px';
             moon.style.top = value * 0.6 + 'px';
-        })</script>
+        }); 
+        }
+
+
+       </script>
 
     <script>
     </script>
