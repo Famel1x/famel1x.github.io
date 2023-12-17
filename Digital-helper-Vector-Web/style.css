@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: I#ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1; 
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --file-btn-color: #677483;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+
+    --card-padding: 1.8rem;
+} 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline:  0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    width:  100vw;
+    height:  100vh;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
+}
+
+a{
+    color: var(--color-dark);
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{
+    font-size: 0.8rem;
+}
+
+h5{
+    font-size: 0.77rem;
+}
+
+small{
+    font-size: 0.75rem;
+}
+
+p{
+    color: car(--color-dark-variant);
+}
+
+b{
+    color: var(--color-dark);
+}
+
+.success{
+    color: var(--color-success);
+}
+
+.primary{
+    color: var(--color-primary);
+}
+
+.warning{
+    color: var(--color-warning);
+}
+
+.container{
+    display: grid;
+    width: 98%;
+    margin: 0 auto;
+    gap: 1.8rem;
+
+    grid-template-columns: 14rem auto 23rem;
+}
+#top{
+    color: var(--color-dark);
+}
+.htext{
+    color: var(--color-dark);
+}
+
+aside{
+    height: 100vh;
+}
+
+aside .top{
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+    border-radius: var(--card-border-radius);
+}
+
+aside .logo{
+    display: flex;
+    gap: 1rem;
+    margin-left: 1.5rem;
+}
+
+aside .logo img{
+    margin-top: 0.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+aside .sidebar{
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 1rem;
+    border-radius: var(--card-border-radius);
+}
+
+aside h3{
+    font-weight: 500;
+}
+
+aside .sidebar a{
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar a span{
+    font-size: 2rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar .helper{
+    margin-top: 0.5rem;
+}
+
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+}
+
+aside .sidebar a.active{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+
+aside .sidebar a.active::before{
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+
+aside .sidebar a.active span{
+    color: var(--color-primary);
+    margin-left: calc(1rem - 3px);
+}
+
+aside .sidebar a:hover{
+    color: car(--color-primary);
+}
+
+aside .sidebar a:hover span{
+    margin-left: 1rem;
+}
+
+main{
+    margin-top: 2rem;
+    margin-left: 10rem;
+}
+
+main .counters{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10rem;
+}
+
+main .counters > div{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1.5rem;
+}
+
+main .counters > div span{
+    background: var(--color-primary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+    margin-left: 20rem;
+}
+
+main .counters > div.onWeek span{
+    background: var(--color-danger);
+}
+
+main .counters > div.onMounth span{
+    background: var(--color-success);
+}
+
+main .counters > div .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .recent-order{
+    margin-top: 2rem;
+}
+
+main .recent-order h2{
+    margin-bottom: 0.8rem;
+}
+
+main .recent-order table{
+    background: var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+main table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+.btn{
+    background-color: var(--btn-color);
+    color: var(--color-dark);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 30px;
+    border: solid;
+    border-radius: 20px;
+    border-color: var(--color-dark);
+}
+
+
+[id=qa]{
+    margin-left: 18rem;
+}
+
+settings{
+    margin-top: 2rem;
+    margin-left: 10rem;
+}
+
+settings .qa table{
+    background: var(--color-white);
+    width: 120%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    transition: all 300ms ease;
+    margin-top: 1.5rem;
+}
+
+settings table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+
+    outline: none;
+}
+
+.btn-16 {
+    border: none;
+    color: var(--file-btn-color);
+    z-index: 1;
+}
+
+.btn-16:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.btn-16:hover {
+    color: var(--file-btn-color);
+}
+
+.btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.btn-16:active {
+    top: 2px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Digital Assistant</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <button class="btn" id="btn">Поменять тему</button>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.png">
+                    <h2 id="top">Digital helper</h2>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="sidebar helper">
+                <a href="index.html">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="newsletter.html">
+                    <span class="material-symbols-outlined">business_messages</span>
+                    <h3>Newsletter</h3>
+                </a>
+                <a href="settings.html" class="active">
+                    <span class="material-symbols-outlined">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="login.html">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+            </div>
+        </aside>
+
+        <settings>
+            <h2 class="htext">Settings</h2>
+            <div class="qa">
+                <table id="data-table">
+                    <thead>
+                        <tr>
+                            <th class="htext">Response_type</th>
+                            <th class="htext">User input</th>
+                            <th class="htext">Bot response</th>
+                            <th class="htext">Required words</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </settings>
+    </div>
+    <script type="text/javascript" src="data.json"></script>
+    <script src="./qa.js"></script>
+    <script src="./index.js"></script>
+    <p id = 'example'> </p>
+</body>
+</html>
